@@ -13,6 +13,15 @@ const W12MForm = () => {
 	const [twoPlusTwo, setTwoPlusTwo] = useState<string>('not-four');
 	const [reasonForSparing, setReasonForSparing] = useState<string>('');
 
+	const submitForm = () => {
+		console.log(speciesName,
+			planetName,
+			numberOfBeings,
+			twoPlusTwo,
+			reasonForSparing
+		)
+	}
+
 	return (
 		<section className='w12MForm'>
 			<W12MHeader />
@@ -56,7 +65,9 @@ const W12MForm = () => {
 					} 
 				/>
 			</div>
-			{/* REST OF FORM GOES HERE */}
+			<button onClick={submitForm}>
+					Submit
+			</button>
 		</section>
 	);
 };
