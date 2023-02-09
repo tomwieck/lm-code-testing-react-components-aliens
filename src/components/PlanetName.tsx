@@ -6,8 +6,8 @@ interface PlanetNameProps {
 const PlanetName : React.FC<PlanetNameProps> = ({ planetName, onChangePlanetName }) => {
     return (
         <>
-            <label htmlFor='planetName'>Planet Name</label>
-            <input id='planetName' type='text' value={planetName} onChange={onChangePlanetName} />
+            <label htmlFor='planetName' data-testid="planet-name-label">Planet Name</label>
+            <input id='planetName' type='text' data-testid="planet-name-input" value={planetName} onChange={onChangePlanetName} />
         </>
     )
 };

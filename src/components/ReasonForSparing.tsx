@@ -6,8 +6,8 @@ interface ReasonForSparingProps {
 const ReasonForSparing : React.FC<ReasonForSparingProps> = ({ reasonForSparing, onChangeReasonForSparing }) => {
     return (
         <>
-            <label htmlFor='reasonForSparing'>Reason for sparing</label>
-            <textarea id="reason-for-sparing" name="reason" value={reasonForSparing} onChange={onChangeReasonForSparing} >
+            <label htmlFor='reasonForSparing' data-testid="reason-for-sparing-label">Reason for sparing</label>
+            <textarea id="reason-for-sparing" data-testid="reason-for-sparing-input" name="reason" value={reasonForSparing} onChange={onChangeReasonForSparing} >
                 
             </textarea>
         </>
